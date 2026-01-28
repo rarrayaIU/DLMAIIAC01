@@ -1,0 +1,28 @@
+network LSR_DAG_Outcome_Only {
+}
+
+variable L {
+    type discrete [2] {low, high};
+}
+
+variable S {
+    type discrete [2] {low, high};
+}
+
+variable R {
+    type discrete [2] {no, yes};
+}
+
+probability ( L ) {
+    table 0.5, 0.5;
+}
+
+probability ( S | L ) {
+    (low) 0.7, 0.3;
+    (high) 0.3, 0.7;
+}
+
+probability ( R | S ) {
+    (low) 0.8, 0.2;
+    (high) 0.3, 0.7;
+}

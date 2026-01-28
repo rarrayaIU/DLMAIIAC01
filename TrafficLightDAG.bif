@@ -1,0 +1,30 @@
+network "LSR_Network" {
+}
+
+variable "L" {
+    type discrete[2] { "true" "false" };
+}
+
+variable "S" {
+    type discrete[2] { "true" "false" };
+}
+
+variable "R" {
+    type discrete[2] { "true" "false" };
+}
+
+probability ( "L" ) {
+    table 0.5 0.5;
+}
+
+probability ( "S" "L" ) {
+    (true)  0.8 0.2;
+    (false) 0.3 0.7;
+}
+
+probability ( "R" "S" "L" ) {
+    (true,  true)  0.9 0.1;
+    (true,  false) 0.6 0.4;
+    (false, true)  0.5 0.5;
+    (false, false) 0.1 0.9;
+}
