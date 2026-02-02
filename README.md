@@ -29,7 +29,7 @@ Prerequisites:
 
 In terminal, navigate to folder location where files are located. 
 
-OPTION I ) MINIMAL EXECUTION 
+OPTION I ) MINIMAL ENVIRONMENT EXECUTION 
 -------------------------------
 1) Generate minimal environment to ensure version compatibility
 conda env create -f environment_minimal.yml
@@ -43,7 +43,7 @@ python Task6_Simulations.py
 * ONLY execute if minimal installation does not provide required packages
 *************************
 
-OPTION II ) MINIMAL EXECUTION 
+OPTION II ) FULL ENVIRONMENT EXECUTION 
 -------------------------------
 If Simulation fails, please attempt to install the full environment
 1) Generate full environment to ensure version compatibility
