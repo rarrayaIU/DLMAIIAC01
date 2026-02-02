@@ -25,26 +25,36 @@ Prerequisites:
 - CONDA
 - Python Version >= 3.10
 - Some extra libraries may be required
+- Download Files locally
 
+In terminal, navigate to folder location where files are located. 
+
+OPTION I ) MINIMAL EXECUTION 
+-------------------------------
 1) Generate minimal environment to ensure version compatibility
 conda env create -f environment_minimal.yml
 2) Activate minimal environment
 conda activate trafficlight-simulation-minimal
-3) Run Simulation 
+3) Choose variables by editing the python file in an editor of choice. 
+4) Run Simulation 
 python Task6_Simulations.py
 
 ******** NOTE ***********
 * ONLY execute if minimal installation does not provide required packages
 *************************
 
+OPTION II ) MINIMAL EXECUTION 
+-------------------------------
 If Simulation fails, please attempt to install the full environment
 1) Generate full environment to ensure version compatibility
 conda env create -f environment_Full.yml
 2) Activate full environment
 conda activate trafficlight-simulation-full-env
-3) Run Simulation 
+3) Choose variables by editing the python file in an editor of choice.
+4) Run Simulation 
 python Task6_Simulations.py
 
 **************************
+
 
 
