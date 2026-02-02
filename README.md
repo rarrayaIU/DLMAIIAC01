@@ -5,6 +5,8 @@ Prior to running script, verify you have the following files:
 1) TrafficLightDAG_OutcomeOnly.bif
 2) TrafficLightDAG.bif
 3) Task6_Simulation.py
+4) environment_minimal.yml
+5) environment_Full.yml
 
 Task 6 - Advanced Workbook
 
@@ -19,6 +21,10 @@ How is the “traffic light” indicator for the management affected if the prob
 Create a numerical simulation to illustrate the result. For simplicity, assume that we can model the results of the survey using a Poisson distribution where we map any value greater than 6 to 6 (not satisfied).
   
 STEPS to Execute Code 
+Prerequisites: 
+- CONDA
+- Python Version >= 3.10
+- Some extra libraries may be required
 
 1) Generate minimal environment to ensure version compatibility
 conda env create -f environment_minimal.yml
@@ -28,7 +34,7 @@ conda activate trafficlight-simulation-minimal
 python Task6_Simulations.py
 
 ******** NOTE ***********
-* ONLY execute if first minimal installation does not provide required packages
+* ONLY execute if minimal installation does not provide required packages
 *************************
 
 If Simulation fails, please attempt to install the full environment

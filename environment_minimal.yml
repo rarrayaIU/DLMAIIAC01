@@ -9,3 +9,7 @@ dependencies:
   - matplotlib
   - networkx
   - pgmpy
+  - pip
+  - pip:
+      - opt_einsum
+      - pyro-ppl
